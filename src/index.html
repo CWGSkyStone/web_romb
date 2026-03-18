@@ -1,3 +1,15 @@
+<!--
+/*
+* File: index.html
+* Author: Szabó József
+* Copyright: 2026, Szabó József
+* Group: Szoft I/N
+* Date: 2026-03-08
+* Github: https://github.com/CWGSkyStone/web_romb
+* Licenc: MIT
+*/
+-->
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -5,19 +17,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Romb</title>
   <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Rombusz kerület/terület-számítása</h1>
-    <form action="">
+    <form id="rhombusForm" action="">
       <div class="input">
-        <label for="" class = "form-label"></label>
-        <input type="text" id="" class ="form-control">
+        <label for="side" class = "form-label">Oldal</label>
+        <input type="text" id="side" class ="form-control">
+        <label for="angle" class = "form-label">Alfa szög</label>
+        <input type="text" id="angle" class ="form-control">
+
+        <button type="submit" class="btn btn-primary mt-2 mb-2">Számítás</button>
+        <button type="reset" class="btn btn-danger mt-2 mb-2" id="delete">Törlés</button>
+               
+        <label for="perimeter" class = "form-label">Kerület</label>
+        <input type="text" id="perimeter" class ="form-control">
+        <label for="area" class = "form-label">Terület</label>
+        <input type="text" id="area" class ="form-control">
       </div>
     </form>
   </div>
   <script src="bootstrap.js"></script>
-  <script src="app.js"></script>  
+  <script src="app.js" type="module"></script>  
 </body>
 </html>
